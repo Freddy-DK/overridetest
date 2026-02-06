@@ -26,5 +26,5 @@ Write-Host @'
 |_| \_|\___| \_/\_/ |____/ \___|\____\___/|_| |_|\__\__,_|_|_| |_|\___|_|   
 '@
 
- New-BcContainer @parameters
- Invoke-ScriptInBcContainer $parameters.ContainerName -scriptblock { $progressPreference = 'SilentlyContinue }
+New-BcContainer @parameters
+Invoke-ScriptInBcContainer $parameters.ContainerName -scriptblock { $progressPreference = 'SilentlyContinue' }
